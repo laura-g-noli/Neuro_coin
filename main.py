@@ -3,14 +3,13 @@ import pandas as pd
 import numpy as np
 from keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
-from data import btc_data
 
 
 # Cargar el modelo entrenado
 modelo_entrenado = load_model("modelo_entrenado.keras")
 
 # Cargar los datos
-btc_data = btc_data
+btc_data = pd.read_csv("btc_data.csv")
 
 # Crear la aplicación FastAPI
 app = FastAPI()
