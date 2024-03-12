@@ -6,3 +6,4 @@ keras
 matplotlib
 scikit-learn
 requests
+tensorflow
