@@ -14,11 +14,6 @@ def procesar_datos(df):
     df = df.rename(columns={1: 'Open', 2: 'High', 3: 'Low', 4: 'Close'})
     return df
 
-# def agregar_caracteristicas(data):
-#     data['MMS30'] = data['Close'].rolling(window=30).mean()
-#     data['MMS60'] = data['Close'].rolling(window=60).mean()
-#     return data.dropna()
-
 btc_data = obtener_datos()
 btc_data = procesar_datos(btc_data)
 
