@@ -57,9 +57,3 @@ modelo, sc = entrenar_modelo(set_entrenamiento)
 prediccion = predecir(modelo, set_validacion, sc)
 
 save_model(modelo, "modelo_entrenado.keras")
-
-# from sklearn.metrics import mean_squared_error
-
-# Calcular el error cuadrático medio (MSE)
-# mse = mean_squared_error(set_validacion.values[60:], prediccion)
-# print(f'Error cuadrático medio (MSE): {mse}')
